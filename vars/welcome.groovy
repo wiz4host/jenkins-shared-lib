@@ -1,4 +1,4 @@
-def welcome (person) {
+def call (person) {
     println "Say hi to " + person
 }
 
