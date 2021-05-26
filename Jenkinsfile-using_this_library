@@ -1,0 +1,28 @@
+
+
+
+@Library('tfe-shared-lib-github')_
+
+//def sumval
+
+pipeline {
+    
+    agent any
+    
+    stages {
+        stage ("welcome"){
+            steps {
+                welcome("Nyash")
+            }
+        }
+        stage ("add") {
+            steps {
+                script{
+                    def sumval = welcome.add(3, 7)
+                    println sumval
+                 }
+            }
+        }
+    }
+    
+}
