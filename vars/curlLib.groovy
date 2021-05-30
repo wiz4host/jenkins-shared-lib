@@ -6,6 +6,6 @@ def call(){
 
 
 def getid (){
-  ID_PROJECT = sh (script: """ curl -k -s "https://official-joke-api.appspot.com/random_joke" | jq '.id' """, returnStdout: true).trim()
-  retrurn ID_PROJECT
+  ID = sh (script: """ curl -k -s "https://official-joke-api.appspot.com/random_joke" | jq '.id' """, returnStdout: true).trim()
+  return ID
 }
