@@ -9,6 +9,10 @@ def add(int a, int b) {
      return c
 }
 
+def curl(){
+    curlLib.getid ()
+}
+
 
 //welcome ("Adam")
 //sumval = add( 4, 5)
